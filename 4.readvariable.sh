@@ -12,4 +12,4 @@ read -s password
 
 echo " username is $username "
 
-echo " password is $password "
+echo  -s " password is $password "
