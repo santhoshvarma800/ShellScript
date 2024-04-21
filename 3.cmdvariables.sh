@@ -1,7 +1,5 @@
-#!/bin/bash
-
-name1=santhosh
-name2=varma
+name1=$1
+name2=$2
 
 echo " This is $name1, this is  my first shell script "
 
