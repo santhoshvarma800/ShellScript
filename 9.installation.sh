@@ -9,7 +9,7 @@ if [ $USERID -ne 0 ]
         echo " you are a Super User "
 fi
 
-dnf install hhdbf -y
+dnf install mysql -y
 
 if [ $? -ne 0 ]
   then 
@@ -21,3 +21,14 @@ if [ $? -ne 0 ]
 fi
 
 dnf install git -y
+
+if [ $? -ne 0 ]
+  then 
+     
+     echo " Installation is FAILURE... "
+      exit 1
+  else
+     echo " Installation is SUCCESS! "
+fi
+
+
