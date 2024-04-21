@@ -2,8 +2,8 @@
 
 USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
-SCRIPTNAME=$(echo $0 | cut -d "." -f1)
-LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP
+SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
+LOGFILE=/tmp/$SCRIP_TNAME-$TIMESTAMP.log
 
 VALIDATE ()
 {
@@ -26,7 +26,7 @@ if [ $USERID -ne 0 ]
 fi
 
 
-dnf install mysqll -y &>> $LOGFILE
+dnf install mysql -y &>> $LOGFILE
 
 VALIDATE "Installing MYSQL"  # we can pass the input values to the functions
 
