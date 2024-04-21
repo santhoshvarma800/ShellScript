@@ -22,7 +22,8 @@ if [ $USERID -ne 0 ]
       echo " You are a Super User "
 fi
 
-dnf install mysql -y
+
+dnf install mysqll -y
 
 VALIDATE "Installing MYSQL"  # we can pass the input values to the functions
 
