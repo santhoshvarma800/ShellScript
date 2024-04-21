@@ -2,13 +2,13 @@
 
 #read variable is used for the prompt
 
-echo " please enter your username: "
+#echo " please enter your username: "
 
-read -p username
+read -p " Enter your username: " username
 
-echo " please enter your password "
+#echo " please enter your password "
 
-read -p password
+read -sp " Enter your password: " password
 
 echo " username is $username "
 
