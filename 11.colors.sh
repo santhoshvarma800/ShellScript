@@ -28,7 +28,7 @@ if [ $USERID -ne 0 ]
       echo " You need to have root access to run the scipt "
       exit 1
    else
-      echo " $B You are a Super User "
+      echo -e " You are a $B Super User "
 fi
 
 
