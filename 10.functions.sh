@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
-SCRIPT_NAME=$(echo $0)
+SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIP_TNAME-$TIMESTAMP.log
 
 VALIDATE ()
@@ -26,12 +26,12 @@ if [ $USERID -ne 0 ]
 fi
 
 
-dnf install mysql -y &>> $LOGFILE
+dnf install mysql -y &>>$LOGFILE
 
 VALIDATE " Installing MYSQL "  # we can pass the input values to the functions
 
 
-dnf install git -y &>> $LOGFILE
+dnf install git -y &>>$LOGFILE
 
 VALIDATE " Installing GIT "
 
