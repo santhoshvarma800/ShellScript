@@ -7,6 +7,6 @@ echo " The hostname is: $HOSTNAME "
 echo " Print the all cmd values: $@ "
 echo " Number of values passed: $# "
 echo " Process ID of the current shellscript: $$ "
-sleep 5 &
+sleep 60 &
 echo " Proccess ID of the last bacground command: $! "
 echo "Check the exit status of previous command: $? "
