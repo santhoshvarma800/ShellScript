@@ -9,16 +9,16 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 B="\e[34m"
-
+N="\e[0m"
 
 VALIDATE ()
 {
     if [ $? -ne 0 ]
   then
-    echo -e " $1 is $R FAILURE... "
+    echo -e " $1 is $R FAILURE... $N"
     exit 1
   else
-     echo -e " $1 is $G SUCCESS! "
+     echo -e " $1 is $G SUCCESS! $N "
 fi
 
 }
@@ -28,7 +28,7 @@ if [ $USERID -ne 0 ]
       echo " You need to have root access to run the scipt "
       exit 1
    else
-      echo -e " You are a $B Super User "
+      echo -e " You are a $B Super User $N "
 fi
 
 
