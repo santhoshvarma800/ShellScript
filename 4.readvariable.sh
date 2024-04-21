@@ -4,11 +4,11 @@
 
 #echo " please enter your username: "
 
-read -sp " Enter your username: " username
+read -p " Enter your username: " username
 
 #echo " please enter your password "
 
-read -sp " Enter your password: " password
+read -p " Enter your password: " password
 
 echo " your username is $username "
 
