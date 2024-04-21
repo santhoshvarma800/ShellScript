@@ -4,11 +4,11 @@
 
 echo " please enter your username: "
 
-read -sp username
+read -p username
 
 echo " please enter your password "
 
-read -sp password
+read -p password
 
 echo " username is $username "
 
