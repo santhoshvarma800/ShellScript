@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DevOpstools=("Jenkins","Ansible","Terraform")
+DevOpstools=("Jenkins" "Ansible" "Terraform")
 
 #List always starts with 0
 
