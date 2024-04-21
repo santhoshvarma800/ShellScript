@@ -28,11 +28,11 @@ fi
 
 dnf install mysql -y &>> $LOGFILE
 
-VALIDATE "Installing MYSQL"  # we can pass the input values to the functions
+VALIDATE " Installing MYSQL "  # we can pass the input values to the functions
 
 
 dnf install git -y &>> $LOGFILE
 
-VALIDATE "Installing MYSQL"
+VALIDATE " Installing GIT "
 
 
