@@ -32,7 +32,7 @@ if [ $USERID -ne 0 ]
 fi
 
 
-dnf install mysqll -y &>>$LOGFILE
+dnf install mysql -y &>>$LOGFILE
 
 VALIDATE " Installing MYSQL "  # we can pass the input values to the functions
 
