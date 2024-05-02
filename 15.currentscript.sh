@@ -1,7 +1,9 @@
 #!/bin/bash
 
-COURSE="DevOps from Current Script"
-echo "Before calling other script, course: $COURSE"
-echo "Process ID of current shell script: $$"
-osurce ./16.otherscript.sh
-echo "After calling other script, course: $COURSE
+course="calling from current script"
+
+echo " hi, $course "
+
+echo " process id of current script: $$ "
+
+./16.otherscript.sh
